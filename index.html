@@ -1,33 +1,35 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
+
+<head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Abhijith - portfolio</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Free HTML5 Website Template by freehtml5.co" />
-	<meta name="keywords" content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="keywords"
+		content="free website templates, free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
 	<meta name="author" content="freehtml5.co" />
 
-	
 
-  	<!-- Facebook and Twitter integration -->
-	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
+
+	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content="" />
+	<meta property="og:image" content="" />
+	<meta property="og:url" content="" />
+	<meta property="og:site_name" content="" />
+	<meta property="og:description" content="" />
 	<meta name="twitter:title" content="" />
 	<meta name="twitter:image" content="" />
 	<meta name="twitter:url" content="" />
 	<meta name="twitter:card" content="" />
 
 
-	
+
 
 	<link href="https://fonts.googleapis.com/css?family=Space+Mono" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
-	
+
 	<!-- Animate.css -->
 	<link rel="stylesheet" href="css/animate.css">
 	<!-- Icomoon Icon Fonts-->
@@ -43,177 +45,265 @@
 
 	<!-- Modernizr JS -->
 	<script src="js/modernizr-2.6.2.min.js"></script>
-	
-
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script type="text/javascript">
-    (function(){
-        emailjs.init("wbaMKRi-xdlhjoj8j"); 
-    })();
-
-    function sendEmail() {
-        event.preventDefault(); 
-
-        var params = {
-            fname: document.getElementById("fname").value,
-            lname: document.getElementById("lname").value,
-            email: document.getElementById("email").value,
-            subject: document.getElementById("subject").value,
-            message: document.getElementById("message").value,
-        };
-
-        const serviceID = "service_17stcsf";
-        const templateID = "template_tk6nqlb";
-
-        emailjs.send(serviceID, templateID, params)
-            .then((res) => {
-                document.getElementById("fname").value = "";
-                document.getElementById("lname").value = "";
-                document.getElementById("email").value = "";
-                document.getElementById("subject").value = "";
-                document.getElementById("message").value = "";
-                console.log(res);
-                alert("Message sent successfully");
-            })
-            .catch((err) => {
-                console.log(err);
-                alert("Failed to send message. Please try again.");
-            });
-    }
-</script>
 
 
-	</head>
-	<body>
-		
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<script type="text/javascript">
+		(function () {
+			emailjs.init("wbaMKRi-xdlhjoj8j");
+		})();
+
+		function sendEmail() {
+			event.preventDefault();
+
+			var params = {
+				fname: document.getElementById("fname").value,
+				lname: document.getElementById("lname").value,
+				email: document.getElementById("email").value,
+				subject: document.getElementById("subject").value,
+				message: document.getElementById("message").value,
+			};
+
+			const serviceID = "service_17stcsf";
+			const templateID = "template_tk6nqlb";
+
+			emailjs.send(serviceID, templateID, params)
+				.then((res) => {
+					document.getElementById("fname").value = "";
+					document.getElementById("lname").value = "";
+					document.getElementById("email").value = "";
+					document.getElementById("subject").value = "";
+					document.getElementById("message").value = "";
+					console.log(res);
+					alert("Message sent successfully");
+				})
+				.catch((err) => {
+					console.log(err);
+					alert("Failed to send message. Please try again.");
+				});
+		}
+	</script>
+
+
+</head>
+
+<body>
+
 	<div class="fh5co-loader"></div>
-	
-	<div id="page">	
-	<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner" style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center">
-					<div class="display-t js-fullheight">
-						<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
-							<div class="profile-thumb" style="background: url(images/about-removebg-preview.png);"></div>
-							<h1><span>Abhijith</span></h1>
-							<h2><span>Web Developer</span></h2>
-							<p>
+
+	<div id="page">
+		<header id="fh5co-header" class="fh5co-cover js-fullheight" role="banner"
+			style="background-image:url(images/cover_bg_3.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center">
+						<div class="display-t js-fullheight">
+							<div class="display-tc js-fullheight animate-box" data-animate-effect="fadeIn">
+								<div class="profile-thumb" style="background: url(images/about-removebg-preview.png);">
+								</div>
+								<h1><span>Abhijith</span></h1>
+								<h2><span>Web Developer</span></h2>
+								<p>
 								<ul class="fh5co-social-icons">
-									<li><a href="https://www.instagram.com/abhiiiiy__/?next=%2F"><i class="icon-instagram2"></i></a></li>
-									<li><a href="https://www.linkedin.com/in/abhijith-v-a19211281/"><i class="icon-linkedin2"></i></a></li>
-									<li><a href="https://github.com/abhijithjithu0007"><i class="icon-github2"></i></a></li>
+									<li><a href="https://www.instagram.com/abhiiiiy__/?next=%2F"><i
+												class="icon-instagram2"></i></a></li>
+									<li><a href="https://www.linkedin.com/in/abhijith-v-a19211281/"><i
+												class="icon-linkedin2"></i></a></li>
+									<li><a href="https://github.com/abhijithjithu0007"><i class="icon-github2"></i></a>
+									</li>
 								</ul>
-							</p>
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</header>
+		</header>
 
-	<div id="fh5co-about" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>About Me</h2>
+		<div id="fh5co-about" class="animate-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>About Me</h2>
+					</div>
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<ul class="info">
-						<li><span class="first-block">Full Name:</span><span class="second-block">Abhijith V</span></li>
-						<li><span class="first-block">Phone:</span><span class="second-block">+91 8078185435</span></li>
-						<li><span class="first-block">Email:</span><span class="second-block">abhijithabhi36151@gmail.com</span></li>
-						<li><span class="first-block">Website:</span><span class="second-block">www.abhijithabhi.in</span></li>
-						<li><span class="first-block">Address:</span><span class="second-block">vadakkumpattu , puthiyakalam , amarambalam south </span></li>
-					</ul>
-				</div>
-				<div class="col-md-8">
-					<h2>Hello!</h2>
-					<p>Hello! I'm Abhijith, a passionate web developer with a strong background in creating dynamic and user-friendly websites. With a keen eye for detail and a love for coding, I specialize in turning complex problems into simple.</p>
-					<p>My journey into web development started with a curiosity for how websites work and a desire to build something impactful from scratch. Over the years, I've honed my skills in various programming languages and frameworks, including HTML, CSS, JavaScript, and modern libraries such as React and Angular.</p>
-					<p>
+				<div class="row">
+					<div class="col-md-4">
+						<ul class="info">
+							<li><span class="first-block">Full Name:</span><span class="second-block">Abhijith V</span>
+							</li>
+							<li><span class="first-block">Phone:</span><span class="second-block">+91 8078185435</span>
+							</li>
+							<li><span class="first-block">Email:</span><span
+									class="second-block">abhijithabhi36151@gmail.com</span></li>
+							<li><span class="first-block">Website:</span><span
+									class="second-block">https://abhijithjithu0007.<br>github.io/Personal-portfolio</span></li>
+							<li><span class="first-block">Address:</span><span class="second-block">vadakkumpattu ,
+									puthiyakalam , amarambalam south </span></li>
+						</ul>
+					</div>
+					<div class="col-md-8">
+						<h2>Hello!</h2>
+						<p>Hello! I'm Abhijith, a passionate web developer with a strong background in creating dynamic
+							and user-friendly websites. With a keen eye for detail and a love for coding, I specialize
+							in turning complex problems into simple.</p>
+						<p>My journey into web development started with a curiosity for how websites work and a desire
+							to build something impactful from scratch. Over the years, I've honed my skills in various
+							programming languages and frameworks, including HTML, CSS, JavaScript, Node js, Express Js, Mongo DB and modern libraries
+							such as React.</p>
+						<p>
 						<ul class="fh5co-social-icons">
-							<li><a href="https://www.instagram.com/abhiiiiy__/?next=%2F"><i class="icon-instagram2"></i></a></li>
-							<li><a href="https://www.linkedin.com/in/abhijith-v-a19211281/"><i class="icon-linkedin2"></i></a></li>
+							<li><a href="https://www.instagram.com/abhiiiiy__/?next=%2F"><i
+										class="icon-instagram2"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/abhijith-v-a19211281/"><i
+										class="icon-linkedin2"></i></a></li>
 							<li><a href="https://github.com/abhijithjithu0007"><i class="icon-github2"></i></a></li>
 						</ul>
-					</p>
+						</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 
 
 
-	<div id="fh5co-skills" class="animate-box">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Skills</h2>
+		<div id="fh5co-skills" class="animate-box">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+						<h2>Skills</h2>
+					</div>
 				</div>
-			</div>
-			<div class="row row-pb-md">
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>CSS3</strong>90%</span></div>
-				</div>
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="85"><span><strong>JavaScript</strong>85%</span></div>
-				</div>
-
-				<div class="col-md-3 col-sm-6 col-xs-12 text-center">
-					<div class="chart" data-percent="90"><span><strong>React Js</strong>90%</span></div>
-				</div>
-				
-			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">HTML 5</span><span class="value-right">95%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
+				<div class="row row-pb-md">
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="95">
+							<span><strong>HTML5</strong> 95%</span>
 						</div>
 					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">CSS</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
-						  </div>
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="90">
+							<span><strong>CSS3</strong> 90%</span>
 						</div>
 					</div>
-			
-
-				</div>
-				<div class="col-md-6">
-					<div class="progress-wrap">
-						<h3><span class="name-left">JavaScript</span><span class="value-right">85%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
-						  aria-valuenow="85" aria-valuemin="0" aria-valuemax="85" style="width:85%">
-						  </div>
-						</div>
-					</div>
-					<div class="progress-wrap">
-						<h3><span class="name-left">React Js</span><span class="value-right">90%</span></h3>
-						<div class="progress">
-						  <div class="progress-bar progress-bar-striped active" role="progressbar"
-						  aria-valuenow="90" aria-valuemin="0" aria-valuemax="90" style="width:90%">
-						  </div>
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="90">
+							<span><strong>React Js</strong> 90%</span>
 						</div>
 					</div>
 					
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="85">
+							<span><strong>JavaScript</strong> 85%</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="90">
+							<span><strong>Node.js</strong> 90%</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="90">
+							<span><strong>Express.js</strong> 90%</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="90">
+							<span><strong>MongoDB</strong> 90%</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="90">
+							<span><strong>TypeScript</strong> 90%</span>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+						<div class="chart" data-percent="90">
+							<span><strong>Tailwind CSS</strong> 90%</span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="progress-wrap">
+							<h3><span class="name-left">HTML5</span><span class="value-right">95%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-1 progress-bar-striped active" role="progressbar"
+									aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3><span class="name-left">CSS3</span><span class="value-right">90%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-2 progress-bar-striped active" role="progressbar"
+									aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3><span class="name-left">Tailwind CSS</span><span class="value-right">90%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="90" style="width: 90%;">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="progress-wrap">
+							<h3><span class="name-left">JavaScript</span><span class="value-right">85%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+									aria-valuenow="85" aria-valuemin="0" aria-valuemax="85" style="width: 85%;">
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3><span class="name-left">React.js</span><span class="value-right">90%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="90" style="width: 90%;">
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3><span class="name-left">Node.js</span><span class="value-right">90%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="90" style="width: 90%;">
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3><span class="name-left">Express.js</span><span class="value-right">90%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="90" style="width: 90%;">
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3><span class="name-left">TypeScript</span><span class="value-right">80%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-5 progress-bar-striped active" role="progressbar"
+									aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+								</div>
+							</div>
+						</div>
+						<div class="progress-wrap">
+							<h3><span class="name-left">MongoDB</span><span class="value-right">90%</span></h3>
+							<div class="progress">
+								<div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="90"
+									aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+			
 
 
 
@@ -222,55 +312,35 @@
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
 					<h2>My Projects</h2>
-					<p>Here are some of the projects I've worked on that showcase my skills and experience in web development.</p>
+					<p>Here are some of the projects I've worked on that showcase my skills and experience in web
+						development.</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/restaurant.png);"></a>
+						<a href="#" class="blog-bg" style="background-image: url(https://cdn-icons-png.flaticon.com/512/7477/7477790.png);"></a>
 						<div class="blog-text">
 							<span class="posted_on">Jan 22th 2022</span>
-							<h3><a href="#">Restaurant Finder</a></h3>
-							<p>Restaurant Finder is a web application that helps users find the best restaurants in their area. It includes filters for cuisine, price range, and ratings.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>310</li>
-								<li><i class="icon-eye2"></i>420</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
+							<h3><a href="#">Weather App</a></h3>
+							<p>Stay updated with our intuitive Weather App, offering real-time forecasts and accurate weather data for your location,
+								 including temperature, humidity, wind speed, and precipitation.</p>
+							
+						</div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/e-commerce.png);"></a>
+						<a href="#" class="blog-bg" style="background-image: url(images/furniqo.png);"></a>
 						<div class="blog-text">
 							<span class="posted_on">Mar. 15th 2023</span>
 							<h3><a href="#">E - Commers</a></h3>
-							<p>This E-commerce platform is designed to provide a seamless shopping experience for users. It features a wide range of products, secure payment gateways.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>327</li>
-								<li><i class="icon-eye2"></i>511</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
+							<p>This E-commerce platform is designed to provide a seamless shopping experience for users.
+								It features a wide range of products, secure payment gateways.</p>
+						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/travel.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Feb. 12th 2024</span>
-							<h3><a href="#">Travel Planner</a></h3>
-							<p> Travel Planner is a web application designed to help users plan their trips efficiently. It provides itinerary suggestions, travel tips, and bookings.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
@@ -305,37 +375,42 @@
 				</div>
 				<div class="row form-group">
 					<div class="col-md-12">
-						<textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Say something about us"></textarea>
+						<textarea name="message" id="message" cols="30" rows="10" class="form-control"
+							placeholder="Say something about us"></textarea>
 					</div>
 				</div>
 				<div class="form-group">
-					<button onclick="sendEmail()" class="btn btn-primary" style="background-color:  rgba(241, 89, 62, 0.9); border-radius: 20px; color: black; border: none;">Send Message</button>
+					<button onclick="sendEmail()" class="btn btn-primary"
+						style="background-color:  rgba(241, 89, 62, 0.9); border-radius: 20px; color: black; border: none;">Send
+						Message</button>
 				</div>
 			</form>
-				
+
 		</div>
 	</div>
 
-	
-</div>
+
 	</div>
-	
+	</div>
+
 	<div id="fh5co-footer" class="bg-warning text-light py-3">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 d-flex flex-column align-items-center justify-content-center text-center">
-					<p>&copy; 2024 Abhijith. All rights reserved. | Website developed by Abhijith Web Development Services</p>
-					<p><a href="#" class="text-light">Privacy Policy</a> | <a href="#" class="text-light">Terms of Service</a></p>
+					<p>&copy; 2024 Abhijith. All rights reserved. | Website developed by Abhijith Web Development
+						Services</p>
+					<p><a href="#" class="text-light">Privacy Policy</a> | <a href="#" class="text-light">Terms of
+							Service</a></p>
 				</div>
 			</div>
 		</div>
 	</div>
-	
+
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
 	</div>
-	
+
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
@@ -349,11 +424,11 @@
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
 
-	
+
 	<script src="js/main.js"></script>
 
-	
 
-	</body>
+
+</body>
+
 </html>
-
